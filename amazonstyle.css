@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    border: border-box;
+}
+
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    background-image: url("amazon-symbol-png-logo-vector-9.png");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+
+.border{
+    border: 2px solid transparent;
+}
+
+.border:hover{
+    border: 2px solid white;
+}
+.add-first{
+    color:#cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px ;
+}
+.add-sec{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-search{
+   display: flex; 
+   justify-content: space-evenly;
+   background-color: rgb(247, 247, 62);
+   width: 620px;
+   height: 40px;
+   border-radius: 4px;
+}
+
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+
+.search-input{
+    width:100%;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size:1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color:#0f1111;
+}
+
+.nav-search:hover{
+    border: 2px solid orange;
+}
+
+span{
+    font-size: 0.7rem;
+}
+
+.nav-second{
+    font-size:0.85rem;
+    font-weight: 70;
+}
+
+.nav-cart i{
+     font-size: 30px;
+}
+
+.nav-cart{
+    font-size:0.85rem ;
+    font-weight: 70px;
+}
+
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display:flex;
+    color:white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-ops p{
+    display:inline;
+    margin-left: 10px;
+}
+
+.panel-ops{
+    width:70%;
+    font-size: 0.85rem;
+}
+
+.panel-deals{
+    font-size: 0.95rem;
+    font-weight: 700px;
+}
+
+.hero-section{
+ background-image: url("https://github.com/MrADas/Clone/raw/d8187fc93f88e69459fe5f93fc99fd9a7b6302a8/clone/hero1_image.jpg");
+ background-size: cover;
+ height:350px;
+ width:100%;
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+ animation: backchange 20s infinite;
+}
+
+@keyframes backchange{
+    0%, 16.6% {
+        background-image: url("AugART_8PM_PC_H1_v2_2x._CB804854772_.jpg");
+    }
+     16.7%, 33.3% {
+        background-image:url("Bestsellers_in_facewashes_PC_1h._CB803252542_.png");
+    }
+    33.4%, 50% {
+        background-image: url("Main_Banner_-_UNREC_-_PC._CB803248433_.png");
+    }
+    50.1%, 66.6% {
+        background-image: url("Ends_Today_Unrec_PC_Hero_3000x1200._CB803307312_.png");
+    }
+    66.7%, 83.3% {
+         background-image: url("Category-PC_Hero_3000x1200_Asin._CB803296794_.jpg");
+    }
+    83.4%, 100% {
+            background-image: url("Category-Hero---Asin-PC-SH-UNREC-TON-2X._CB803331129_.jpg");
+    }
+}
+
+.hero-message p{
+    background-color: white;
+    color:black;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width:90%;
+    margin-bottom: 25px;
+}
+
+.hero-message a{
+    color:#007185
+}
+
+.shop-section{
+    display:flex;
+    flex: wrap;
+    justify-content: space-evenly;
+    background-image:url("https://static.vecteezy.com/system/resources/previews/026/672/823/original/decorative-indian-flag-theme-independence-day-15th-august-tricolor-background-free-vector.jpg")
+}
+
+.box{
+    height: 390px;
+    width: 31%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    padding: 20px 0px 15px;
+    margin-top: 15px;
+}
+
+.box-img{
+    Height:345px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.box-content p{
+    color: #007185;
+    display:flow-root;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.offer-section{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/026/672/823/original/decorative-indian-flag-theme-independence-day-15th-august-tricolor-background-free-vector.jpg");
+}
+.card-product-container{
+    padding:15px;
+}
+
+
+.card-product{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: space-between;
+    max-width: 300px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    
+}
+
+.card-product h2{
+    margin: 0;
+    padding: 10px;
+}
+
+.card-product-nested-card{
+    display:flex;
+    padding:10px;
+    background-color: white;
+    max-width:300px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-nested p{
+    font-size: 1rem;
+    margin:5px;
+    color: #2f4056;
+}
+.card-nested img{
+    object-fit: cover;
+    width: 128px;
+    height: 100px;
+}
+
+.card-product-btn{
+    font-size: 14px;
+    align-items: flex-start;
+    padding: 5px 15px;
+    border:none;
+    color:#0f1111
+}
+
+.card-product-btn:hover{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    color: black;
+    transition: 0.4s; 
+    cursor:pointer;
+}
+
+.Deal-section{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/026/672/823/original/decorative-indian-flag-theme-independence-day-15th-august-tricolor-background-free-vector.jpg");
+}
+
+.Deal-section-btn{
+    font-size: 13px;
+    padding: 15px 15px;
+    border:#0f1111;
+    display: flex;
+    justify-content: center;
+    width:100%;
+    background-color: yellow;
+}
+
+.Deal-section-btn:hover{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    color: black;
+    transition: 0.4s; 
+    cursor:pointer;
+}
+
+.point-section{
+    position:relative;
+    height:450px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/026/672/823/original/decorative-indian-flag-theme-independence-day-15th-august-tricolor-background-free-vector.jpg");
+}
+
+.point-nested img{
+    object-fit: cover;
+    width: 120px;
+    height: 130px;
+}
+
+.today_deals_container{
+    padding: 0px;
+    border:2px ;
+    box-shadow: #0f1111;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/026/672/823/original/decorative-indian-flag-theme-independence-day-15th-august-tricolor-background-free-vector.jpg");
+}
+
+.today_deals_container p{
+    color: black;
+    border: none;
+}
+
+.today_deals_container a{
+    color:black;
+    font-size:13px;
+}
+
+.today_deals_heading{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.today_deals img{
+    object-fit: cover;
+    width:150px
+}
+
+.ride_deals_container{
+    border:2px;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/026/672/823/original/decorative-indian-flag-theme-independence-day-15th-august-tricolor-background-free-vector.jpg");
+}
+
+.ride_deals_heading{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+
+.last-section{
+    width:100%;
+    color:white;
+    background-color:#2f4056 ;
+    padding: 15px 15px;
+}
+
+.last-section-btn:hover{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: black;
+    color: black;
+    transition: 0.4s; 
+    cursor:pointer;
+}
+
+
+.underline:hover{
+    text-decoration: underline;
+}
+
+.footerone{
+    height:450px;
+    width: 100%;
+    background-color: #232f3e;
+    color: #e2e2e2;
+    border-bottom: 1px groove #2f4056;
+}
+
+.allfootpara{
+    display: flex;
+    align-self: self-start;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 100px;
+}
+
+.footone_para1{
+    width:100px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.footone_one1 li{
+    list-style: none;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.footone_para2{
+    width:160px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.footone_one2 li{
+    list-style: none;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.footone_para3{
+    width:200px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.footone_one3 li{
+    list-style: none;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.footone_para4{
+    width:150px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.footone_one4 li{
+    list-style: none;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.footertwo{
+    height:130px;
+    width:100%;
+    background-color: #232f3e;
+}
+
+.foot2logo{
+    width:100%;
+    height:23px;
+    text-align: center;
+}
+
+.foot2logo img{
+    height:100px;
+    margin-top:30px; 
+}
+
+.footerthree{
+    height:300px;
+    width:100%;
+    background-color: #131a22;
+    color: #e2e2e2
+}
+
+.footlink1{
+    width: 100px;
+    font-size:1rem;
+}
+
+.link2nd{
+    color: #999999;
+}
+
+.otherslink_one{
+    display: flex;
+    gap: 20px;
+}
+
+.others_link{
+    display:flex;
+    justify-content:space-evenly;
+    gap:170px;
+    padding-top: 30px;
+}
+
+.copyright{
+    height: 60px;
+    width: 100%;
+    background-color: #131a22;
+    color:#e2e2e2;
+    font-size: 0.8rem;
+}
+
+.clink{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cright{
+    display: flex;
+    justify-content: center;
+}
